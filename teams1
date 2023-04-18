@@ -1,0 +1,6 @@
+import pandas as pd
+
+files = pd.read_excel('teams.xlsx')
+files_to_use = files[files['Include'] == 'Y']['File path'].tolist()
+for f in files_to_use:
+    df = pd.read_excel(f)
