@@ -1,0 +1,4 @@
+import pandas as pd
+url='C:/Users/Nikitha Ade/Downloads/teams.csv.xls'
+dataframe=pd.read_excel(url)
+dataframe.head(21)
